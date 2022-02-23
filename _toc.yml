@@ -8,8 +8,8 @@ parts:
   - caption: Name of Part 1
     chapters:
     - file: markdown
-      sections:
-      - file: notebooks
+    - file: Interactive_test
+    - file: notebooks
   - caption: Name of Part 2
     chapters:
     - file: markdown_3

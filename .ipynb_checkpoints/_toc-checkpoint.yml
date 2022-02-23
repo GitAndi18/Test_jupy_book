@@ -1,13 +1,21 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 
+
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: intro_2
-- file: notebooks
-- file: markdown_2
-- file: Deconvolve_211127
+parts:
+  - caption: Name of Part 1
+    chapters:
+    - file: markdown
+      sections:
+      - file: Interactive_test
+  - caption: Name of Part 2
+    chapters:
+    - file: markdown_3
+    - file: Deconvolve_211127
+      sections:
+      - file: intro_2
+
 
 

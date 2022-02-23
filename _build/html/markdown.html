@@ -44,14 +44,14 @@
     <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Content with notebooks" href="notebooks.html" />
+    <link rel="next" title="Hide test cell" href="Interactive_test.html" />
     <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -105,6 +105,16 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Interactive_test.html">
+   Hide test cell
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
   </a>
  </li>
 </ul>
@@ -471,15 +481,13 @@ structured.</p>
 </pre></div>
 </div>
 <p>Check out the content pages bundled with this sample book to see more.</p>
-<div class="toctree-wrapper compound">
-</div>
 </div>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "executablebooks/jupyter-book",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -507,10 +515,10 @@ structured.</p>
             <p class="prev-next-title">Welcome to your Jupyter Book</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="notebooks.html" title="next page">
+    <a class='right-next' id="next-link" href="Interactive_test.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Content with notebooks</p>
+        <p class="prev-next-title">Hide test cell</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -46,15 +46,15 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Here’s my sample title" href="markdown_3.html" />
-    <link rel="prev" title="Markdown Files" href="markdown.html" />
+    <link rel="prev" title="Hide test cell" href="Interactive_test.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -107,6 +107,16 @@
  <li class="toctree-l1">
   <a class="reference internal" href="markdown.html">
    Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Interactive_test.html">
+   Hide test cell
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Content with notebooks
   </a>
  </li>
 </ul>
@@ -228,6 +238,9 @@
         
         
         
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
@@ -344,7 +357,7 @@ For example, here’s some sample Matplotlib code:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.pyplot._IonContext at 0x224496e6220&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.pyplot._IonContext at 0x170e6a6d7c0&gt;
 </pre></div>
 </div>
 </div>
@@ -385,7 +398,7 @@ with your book. For more information about this, see <a class="reference externa
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "executablebooks/jupyter-book",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -406,11 +419,11 @@ with your book. For more information about this, see <a class="reference externa
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="markdown.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Interactive_test.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Markdown Files</p>
+            <p class="prev-next-title">Hide test cell</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="markdown_3.html" title="next page">
